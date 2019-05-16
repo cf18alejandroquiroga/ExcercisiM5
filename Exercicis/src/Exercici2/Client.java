@@ -15,9 +15,11 @@ public class Client {
         this.lloguers = new Vector<Lloguer>();
     }
 
-    public String getNif()     { return nif;     }
-    public String getNom()     { return nom;     }
-    public String getTelefon() { return telefon; }
+    public String getNif()      { return nif;     }
+    public String getNom()      { return nom;     }
+    public String getTelefon()  { return telefon; }
+    public int getNumLloguers() { return lloguers.size(); }
+    public Vector<Lloguer> getLloguers() { return lloguers; }
 
     public void setNif(String nif) { this.nif = nif; }
     public void setNom(String nom) { this.nom = nom; }
@@ -37,6 +39,8 @@ public class Client {
     public boolean conte(Lloguer lloguer) {
         return lloguers.contains(lloguer);
     }
+
+
 
     public String informe() {
         // XXX: de moment buit

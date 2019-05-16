@@ -1,0 +1,16 @@
+*---------------------------------------------------------------------------------------------------------------------*
+| Exercici 1. El meu exemple                                                                                          |
+|                                                                                                                     |
+| Descriu un exemple de canvi de codi teu que es pugui considerar refacció i un altre que no. Pots fer servir codi de |
+| qualsevol dels teus exercicis del cicle (especifica la procedència). No oblidis descriure el perquè de la teva      |
+| classificació basant-te en els conceptes d’aquesta secció.                                                          |
+*---------------------------------------------------------------------------------------------------------------------*
+
+
+Con relativa frecuencia suelo usar la herramienta del IDE de refactorización con el objetivo de darle un nombre más
+descriptivo o adecuado a un método que inicialmente había planteado de una manera en concreto.
+
+Cualquier cambio como por ejemplo el del ejercicio de validación de aplicaciones con JUnit en el que había que cambiar
+dos atributos (x, y) por una array de enteros, con un comportamiento equivalente, a pesar de que al traducir
+correctamente las referencias el comportamiento es el mismo (tal y como demostraron los test), sí que cambia su
+estructura interna y no es un cambio que se limite a mejorar su legibilidad.
