@@ -21,6 +21,6 @@ public class Lloguer {
     public Vehicle getVehicle() { return vehicle; }
 
     public void setData(Date data) { this.data = data; }
-    public void setDies(int dies) { this.dies = dies;    }
+    public void setDies(int dies) { this.dies = dies; }
     public void setVehicle(Vehicle vehicle) { this.vehicle = vehicle; }
 }
