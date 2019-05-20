@@ -1,0 +1,48 @@
+@startuml
+
+title GestorLloguers
+
+class Client{
+    - String nif
+    - String nom
+    - String telefon
+    - Vector<Lloguer> lloguers
+    + Client(String nif, String nom, String telefon)
+    + String getNif()
+    + String getNom()
+    + String getTelefon()
+    + String getLloguers()
+    + int getNumLloguers()
+
+}
+class Vehicle{
+    - Categoria categoria
+    - String model
+    - String marca
+}
+class Lloguer{
+    - Date data
+    - int dies
+    - Vehicle vehicle
+    + SimpleDateFormat dateFormat
+}
+class GestorLloguersLite{
+    + SimpleDateFormat dateFormat
+}
+enum Categoria {
+    BASIC
+    GENERAL
+    LUXE
+}
+
+Client -> Lloguer
+Lloguer -> Vehicle
+Vehicle --> Categoria
+
+@enduml
+
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
