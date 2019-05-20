@@ -6,7 +6,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class TestClient {
     @Test
-    public void testClientInforme() throws ParseException {
+    public void testClientInformeFull() throws ParseException {
         Client Alex = new Client("12345678X", "Alejandro Quiroga", "666555444");
         Vehicle CZL1234 = new Vehicle("C5","Audi",Vehicle.Categoria.BASIC);
         Vehicle RMP2345 = new Vehicle("Murcielago", "Lamborgini",Vehicle.Categoria.LUXE);
@@ -25,4 +25,34 @@ public class TestClient {
                 "Import a pagar: 4485.0€\n" +
                 "Punts guanyats: 3" + "\n", Alex.informe());
     }
+
+    @Test
+    public void testClientInformeZeroEntries(){
+        Client Alex = new Client("12345678X", "Alejandro Quiroga", "666555444");
+
+        assertEquals("Informe de lloguers del client Alejandro Quiroga (12345678X)\n" +
+                "Import a pagar: 0.0€\n" +
+                "Punts guanyats: 0\n", Alex.informe());
+    }
+
+    @Test
+    public void testClientInformeZeroDaysRented() throws ParseException {
+        Client Alex = new Client("12345678X", "Alejandro Quiroga", "666555444");
+        Vehicle CZL1234 = new Vehicle("C5","Audi",Vehicle.Categoria.BASIC);
+        Lloguer La0001 = new Lloguer("2/8/2013",0,CZL1234);
+        Alex.afegeix(La0001);
+
+        assertEquals("Informe de lloguers del client Alejandro Quiroga (12345678X)\n" +
+                "\tAudi C5: 90.0€\n" +
+                "Import a pagar: 90.0€\n" +
+                "Punts guanyats: 1\n", Alex.informe());
+    }
+
+    @Test(expected=NullPointerException.class)
+    public void testClientInformeNullEntry(){
+        Client Alex = null;
+        assertEquals("",Alex.informe());
+    }
+
+
 }
