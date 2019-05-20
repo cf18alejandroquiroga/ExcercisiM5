@@ -1,5 +1,3 @@
-package Exercici2;
-
 public class Vehicle {
 
     private Categoria categoria;
@@ -21,7 +19,9 @@ public class Vehicle {
 
     public String getMarca() { return marca; }
     public String getModel() { return model; }
-    public String getCategoria() {
+
+    public Categoria getCategoria() { return categoria; }
+    public String getCategoria(boolean bool) {
         switch(categoria){
             case BASIC:
                 return "basic";

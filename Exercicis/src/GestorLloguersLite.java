@@ -1,9 +1,3 @@
-package Exercici3;
-
-import Exercici2.Client;
-import Exercici2.Lloguer;
-import Exercici2.Vehicle;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
