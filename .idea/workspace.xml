@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34451efb-4b65-4f24-a09e-a28866fd074f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicis/Doc/Exercisi 1" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicis/Doc/Exercici 1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicis/src/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicis/src/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercicis/TestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercicis/TestClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicis/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicis/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicis/src/Lloguer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicis/src/Lloguer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exercicis/src/TestClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="196">
               <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exercicis/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-449">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
               <folding>
                 <element signature="e#809#810#0" expanded="true" />
                 <element signature="e#847#848#0" expanded="true" />
@@ -61,9 +59,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exercicis/src/GestorLloguersLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="255">
               <caret line="17" column="77" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -81,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exercicis/src/Lloguer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,9 +122,7 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/Exercici 2/Client.java" />
         <option value="$PROJECT_DIR$/Exercicis/src/Exercici 2/Client.java" />
-        <option value="$PROJECT_DIR$/Exercicis/src/Client.java" />
         <option value="$PROJECT_DIR$/Exercicis/src/Vehicle/Vehicle.java" />
-        <option value="$PROJECT_DIR$/Exercicis/src/Lloguer.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Exercicis/src/Exercici2/Lloguer.java" />
         <option value="$PROJECT_DIR$/Exercicis/src/Exercici3/GestorLloguersLite.java" />
@@ -126,6 +131,8 @@
         <option value="$PROJECT_DIR$/out/readme" />
         <option value="$PROJECT_DIR$/Exercicis/src/GestorLloguersLite.java" />
         <option value="$PROJECT_DIR$/Exercicis/src/TestClient.java" />
+        <option value="$PROJECT_DIR$/Exercicis/src/Client.java" />
+        <option value="$PROJECT_DIR$/Exercicis/src/Lloguer.java" />
       </list>
     </option>
   </component>
@@ -208,13 +215,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestClient.testClientInformeZeroDaysRented">
-    <configuration name="TestClient.testClientInforme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestClient">
+    <configuration name="TestClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercicis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestClient" />
-      <option name="METHOD_NAME" value="testClientInforme" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClient" />
         <item itemvalue="JUnit.TestClient.testClientInformeZeroDaysRented" />
         <item itemvalue="JUnit.TestClient.testClientInformeNullEntry" />
         <item itemvalue="JUnit.TestClient.testClientInformeFull" />
         <item itemvalue="JUnit.TestClient.testClientInformeZeroEntries" />
-        <item itemvalue="JUnit.TestClient.testClientInforme" />
       </list>
     </recent_temporary>
   </component>
@@ -336,14 +342,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32736155" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32736155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32736155" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010661" side_tool="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -421,14 +427,16 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Exercicis/Exercici1/Exercisi 1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Exercicis/Exercici1/Exercisi 1" />
     <entry file="file://$PROJECT_DIR$/readme">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -456,6 +464,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Exercicis/.attach_pid10686" />
+    <entry file="file://$PROJECT_DIR$/Exercicis/src/TestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Exercicis/src/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-359">
@@ -463,23 +482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercicis/.attach_pid10686">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exercicis/src/GestorLloguersLite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="255">
           <caret line="17" column="77" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exercicis/src/Lloguer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -488,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercicis/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
           <folding>
             <element signature="e#809#810#0" expanded="true" />
             <element signature="e#847#848#0" expanded="true" />
@@ -499,10 +505,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercicis/src/TestClient.java">
+    <entry file="file://$PROJECT_DIR$/Exercicis/src/Lloguer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="75">
+          <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

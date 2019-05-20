@@ -21,4 +21,26 @@ public class Lloguer {
     public void setData(Date data) { this.data = data; }
     public void setDies(int dies) { this.dies = dies; }
     public void setVehicle(Vehicle vehicle) { this.vehicle = vehicle; }
+
+    public double quantitat(){
+        double quantitat = 0;
+        switch (this.getVehicle().getCategoria()) {
+            case BASIC:
+                quantitat += 3;
+                if (this.getDies() > 3) {
+                    quantitat += (this.getDies() - 3) * 1.5;
+                }
+                return quantitat;
+            case GENERAL:
+                quantitat += 4;
+                if (this.getDies() > 2) {
+                    quantitat += (this.getDies() - 2) * 2.5;
+                }
+                return quantitat;
+            case LUXE:
+                quantitat += this.getDies() * 6;
+                return quantitat;
+        }
+        return 0;
+    }
 }
