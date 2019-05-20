@@ -42,5 +42,6 @@ public class GestorLloguersLite {
         Alex.afegeix(La0003);
 
         System.out.print(showInfo(Alex));
+        Alex.informe();
     }
 }
