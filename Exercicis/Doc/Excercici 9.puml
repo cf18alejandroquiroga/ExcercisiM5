@@ -7,24 +7,46 @@ class Client{
     - String nom
     - String telefon
     - Vector<Lloguer> lloguers
-    + Client(String nif, String nom, String telefon)
+    + Client(nif, nom, telefon)
     + String getNif()
     + String getNom()
     + String getTelefon()
     + String getLloguers()
     + int getNumLloguers()
+    + void setNif(nif)
+    + void setNom(nom)
+    + void setTelefon(telefon)
+    + void afegeix(Lloguer)
+    + void elimina(Lloguer)
+    + boolean conte(Lloguer)
+    + String informe()
 
 }
 class Vehicle{
     - Categoria categoria
     - String model
     - String marca
+    + Vehicle(model, marca, categoria)
+    + String getModel()
+    + String getMarca()
+    + Categoria getCategoria()
+    + String getCategoria()
+    + void setModel()
+    + void setMarca()
 }
 class Lloguer{
     - Date data
     - int dies
     - Vehicle vehicle
     + SimpleDateFormat dateFormat
+    + Lloguer(data, dies, vehicle)
+    + Date getData()
+    + int getDies()
+    + Vehicle getVehicle()
+    + void setData(data)
+    + void setDies(dies)
+    + void setVehicle(vehicle)
+    + double quantitat()
 }
 class GestorLloguersLite{
     + SimpleDateFormat dateFormat
