@@ -48,7 +48,7 @@ public class Client {
                 " (" + getNif() + ")\n";
         for (Lloguer lloguer: lloguers) {
             double quantitat = lloguer.quantitat();
-            bonificacions += bonificacionsDeLloguer(lloguer);
+            bonificacions += lloguer.bonificacionsDeLloguer();
 
             // composa els resultats d'aquest lloguer
             resultat += "\t" +
@@ -63,12 +63,5 @@ public class Client {
         resultat += "Import a pagar: " + total + "€\n" +
                 "Punts guanyats: " + bonificacions + "\n";
         return resultat;
-    }
-
-    private int bonificacionsDeLloguer(Lloguer lloguer){
-        // afegeix bonificació per dos dies de lloguer de Luxe
-        if (lloguer.getVehicle().getCategoria() == Vehicle.Categoria.LUXE &&
-                lloguer.getDies()>1 ) { return 2; }
-        else { return 1; }
     }
 }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34451efb-4b65-4f24-a09e-a28866fd074f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercicis/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicis/src/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="34451efb-4b65-4f24-a09e-a28866fd074f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +43,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exercicis/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="382">
               <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
             </state>
           </provider>
@@ -201,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GestorLloguersLite">
+  <component name="RunManager" selected="JUnit.TestClient">
     <configuration name="GestorLloguersLite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GestorLloguersLite" />
       <module name="Exercicis" />
@@ -250,8 +247,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GestorLloguersLite" />
         <item itemvalue="JUnit.TestClient" />
+        <item itemvalue="Application.GestorLloguersLite" />
         <item itemvalue="JUnit.TestClient.testClientInformeZeroDaysRented" />
         <item itemvalue="JUnit.TestClient.testClientInformeNullEntry" />
         <item itemvalue="JUnit.TestClient.testClientInformeFull" />
@@ -314,7 +311,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -504,7 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercicis/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="382">
           <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
         </state>
       </provider>
