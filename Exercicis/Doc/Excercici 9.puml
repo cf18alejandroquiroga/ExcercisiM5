@@ -49,7 +49,9 @@ class Lloguer{
     + double quantitat()
 }
 class GestorLloguersLite{
-    + SimpleDateFormat dateFormat
+    ~ static SimpleDateFormat dateFormat
+    ~ static String showInfo()
+    + static void main([]String)
 }
 enum Categoria {
     BASIC
@@ -62,9 +64,3 @@ Lloguer -> Vehicle
 Vehicle --> Categoria
 
 @enduml
-
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
