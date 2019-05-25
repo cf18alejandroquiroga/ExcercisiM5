@@ -1,0 +1,11 @@
+@startuml
+
+title Exercici 10
+
+GestorLloguesLite -> Client: informe()
+Client -> Lloguer: quantitat()
+Lloguer -> Vehicle: getCategoria()
+Lloguer <- Vehicle: return Categoria
+Client <- Lloguer: return quantitat
+GestorLloguesLite <- Client: return informe
+@enduml
