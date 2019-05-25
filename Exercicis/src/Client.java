@@ -47,6 +47,7 @@ public class Client {
                 getNom() +
                 " (" + getNif() + ")\n";
         for (Lloguer lloguer: lloguers) {
+            //No recuerdo cuando hice esto o si lo hice, pero creo que es lo que pide el ejercicio 11
             double quantitat = lloguer.quantitat();
 
             // afegeix lloguers freqüents
