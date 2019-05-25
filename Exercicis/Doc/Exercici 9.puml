@@ -47,6 +47,7 @@ class Lloguer{
     + void setDies(dies)
     + void setVehicle(vehicle)
     + double quantitat()
+    + int bonificaionsDeLloguer()
 }
 class GestorLloguersLite{
     ~ static SimpleDateFormat dateFormat
