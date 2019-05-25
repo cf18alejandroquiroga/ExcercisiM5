@@ -47,17 +47,8 @@ public class Client {
                 getNom() +
                 " (" + getNif() + ")\n";
         for (Lloguer lloguer: lloguers) {
-            //No recuerdo cuando hice esto o si lo hice, pero creo que es lo que pide el ejercicio 11
             double quantitat = lloguer.quantitat();
-
-            // afegeix lloguers freqüents
-            bonificacions ++;
-
-            // afegeix bonificació per dos dies de lloguer de Luxe
-            if (lloguer.getVehicle().getCategoria() == Vehicle.Categoria.LUXE &&
-                    lloguer.getDies()>1 ) {
-                bonificacions ++;
-            }
+            bonificacions += bonificacionsDeLloguer(lloguer);
 
             // composa els resultats d'aquest lloguer
             resultat += "\t" +
@@ -72,5 +63,12 @@ public class Client {
         resultat += "Import a pagar: " + total + "€\n" +
                 "Punts guanyats: " + bonificacions + "\n";
         return resultat;
+    }
+
+    private int bonificacionsDeLloguer(Lloguer lloguer){
+        // afegeix bonificació per dos dies de lloguer de Luxe
+        if (lloguer.getVehicle().getCategoria() == Vehicle.Categoria.LUXE &&
+                lloguer.getDies()>1 ) { return 2; }
+        else { return 1; }
     }
 }
