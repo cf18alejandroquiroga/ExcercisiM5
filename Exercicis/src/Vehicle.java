@@ -35,7 +35,7 @@ public class Vehicle {
 
     }
 
-    //public void setCategoria(String categoria) { this.categoria = categoria; }
+    public void setCategoria(Categoria categoria) { this.categoria = categoria; }
     public void setMarca(String marca) { this.marca = marca; }
     public void setModel(String model) { this.model = model; }
 

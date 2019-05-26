@@ -13,6 +13,7 @@ class Client{
     + String getTelefon()
     + String getLloguers()
     + int getNumLloguers()
+    + Vector<Lloguer> getLloguers()
     + void setNif(nif)
     + void setNom(nom)
     + void setTelefon(telefon)
@@ -20,7 +21,15 @@ class Client{
     + void elimina(Lloguer)
     + boolean conte(Lloguer)
     + String informe()
-
+    - double importTotal()
+    - int bonificacionsTotals()
+    - String composaCapsalera()
+    - String composaDetall()
+    - String composaPeu()
+    + String informeHTML()
+    - String composaCapsaleraHTML()
+    - String composaDetallHTML()
+    - String composaPeuHTML()
 }
 class Vehicle{
     - Categoria categoria
@@ -33,12 +42,21 @@ class Vehicle{
     + String getCategoria()
     + void setModel()
     + void setMarca()
+    + void setCategoria()
 }
 class Lloguer{
     - Date data
     - int dies
     - Vehicle vehicle
-    + SimpleDateFormat dateFormat
+    - SimpleDateFormat dateFormat
+    - static final int PREU_INICIAL_BASIC = 3;
+    - static final int PREU_INICIAL_REGULAR = 4;
+    - static final int PREU_INICIAL_LUXE = 6;
+    - static final int DIES_PER_DESCOMPTE_BASIC = 3;
+    - static final int DIES_PER_DESCOMPTE_REGULAR = 2;
+    - static final double DISCOMPTE_BASIC = 1.5;
+    - static final double DISCOMPTE_REGULAR = 2.5;
+    - static final int INCREMENT_PREU = 30;
     + Lloguer(data, dies, vehicle)
     + Date getData()
     + int getDies()
@@ -46,8 +64,9 @@ class Lloguer{
     + void setData(data)
     + void setDies(dies)
     + void setVehicle(vehicle)
-    + double quantitat()
+    - double getPreuRelatiu()
     + int bonificaionsDeLloguer()
+    + double getPreuFinal()
 }
 class GestorLloguersLite{
     ~ static SimpleDateFormat dateFormat
