@@ -15,6 +15,7 @@ public class Lloguer {
     private static final int DIES_PER_DESCOMPTE_REGULAR = 2;
     private static final double DISCOMPTE_BASIC = 1.5;
     private static final double DISCOMPTE_REGULAR = 2.5;
+    private static final int INCREMENT_PREU = 30;
 
 
     public Lloguer(String data, int dies, Vehicle vehicle) throws ParseException {
@@ -31,7 +32,7 @@ public class Lloguer {
     public void setDies(int dies) { this.dies = dies; }
     public void setVehicle(Vehicle vehicle) { this.vehicle = vehicle; }
 
-    public double getPreuRelatiu(){
+    private double getPreuRelatiu(){
         double preuRelatiu = 0;
         switch (this.getVehicle().getCategoria()) {
             case BASIC:
@@ -58,5 +59,9 @@ public class Lloguer {
         if (this.getVehicle().getCategoria() == Vehicle.Categoria.LUXE &&
                 this.getDies()>1 ) { return 2; }
         else { return 1; }
+    }
+
+    public double getPreuFinal() {
+        return getPreuRelatiu() * INCREMENT_PREU;
     }
 }
