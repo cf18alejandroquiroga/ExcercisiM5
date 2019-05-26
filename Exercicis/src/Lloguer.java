@@ -8,13 +8,14 @@ public class Lloguer {
     private Vehicle vehicle;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
 
-    private static final int BONIFICACION_INICIAL_BASIC = 3;
-    private static final int BONIFICACION_INICIAL_GENERAL = 4;
-    private static final int DIES_PER_BONIFICACION_ADICIONAL_BASIC = 3;
-    private static final int DIES_PER_BONIFICACION_ADICIONAL_GENERAL = 2;
-    private static final double MULTIPLICADOR_BONIFICACION_BASIC = 1.5;
-    private static final double MULTIPLICADOR_BONIFICACION_GENERAL = 2.5;
-    private static final double MULTIPLICADOR_BONIFICACION_LUXE = 6;
+    private static final int PREU_INICIAL_BASIC = 3;
+    private static final int PREU_INICIAL_REGULAR = 4;
+    private static final int PREU_INICIAL_LUXE = 6;
+    private static final int DIES_PER_DESCOMPTE_BASIC = 3;
+    private static final int DIES_PER_DESCOMPTE_REGULAR = 2;
+    private static final double DISCOMPTE_BASIC = 1.5;
+    private static final double DISCOMPTE_REGULAR = 2.5;
+
 
     public Lloguer(String data, int dies, Vehicle vehicle) throws ParseException {
         this.data = dateFormat.parse(data);
@@ -30,24 +31,24 @@ public class Lloguer {
     public void setDies(int dies) { this.dies = dies; }
     public void setVehicle(Vehicle vehicle) { this.vehicle = vehicle; }
 
-    public double quantitat(){
-        double quantitat = 0;
+    public double getPreuRelatiu(){
+        double preuRelatiu = 0;
         switch (this.getVehicle().getCategoria()) {
             case BASIC:
-                quantitat += BONIFICACION_INICIAL_BASIC;
-                if (this.getDies() > DIES_PER_BONIFICACION_ADICIONAL_BASIC) {
-                    quantitat += (this.getDies() - DIES_PER_BONIFICACION_ADICIONAL_BASIC) * MULTIPLICADOR_BONIFICACION_BASIC;
+                preuRelatiu += PREU_INICIAL_BASIC;
+                if (this.getDies() > DIES_PER_DESCOMPTE_BASIC) {
+                    preuRelatiu += (this.getDies() - DIES_PER_DESCOMPTE_BASIC) * DISCOMPTE_BASIC;
                 }
-                return quantitat;
+                return preuRelatiu;
             case GENERAL:
-                quantitat += BONIFICACION_INICIAL_GENERAL;
-                if (this.getDies() > DIES_PER_BONIFICACION_ADICIONAL_GENERAL) {
-                    quantitat += (this.getDies() - DIES_PER_BONIFICACION_ADICIONAL_GENERAL) * MULTIPLICADOR_BONIFICACION_GENERAL;
+                preuRelatiu += PREU_INICIAL_REGULAR;
+                if (this.getDies() > DIES_PER_DESCOMPTE_REGULAR) {
+                    preuRelatiu += (this.getDies() - DIES_PER_DESCOMPTE_REGULAR) * DISCOMPTE_REGULAR;
                 }
-                return quantitat;
+                return preuRelatiu;
             case LUXE:
-                quantitat += this.getDies() * MULTIPLICADOR_BONIFICACION_LUXE;
-                return quantitat;
+                preuRelatiu += this.getDies() * PREU_INICIAL_LUXE;
+                return preuRelatiu;
         }
         return 0;
     }
