@@ -8,6 +8,14 @@ public class Lloguer {
     private Vehicle vehicle;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
 
+    private static final int BONIFICACION_INICIAL_BASIC = 3;
+    private static final int BONIFICACION_INICIAL_GENERAL = 4;
+    private static final int DIES_PER_BONIFICACION_ADICIONAL_BASIC = 3;
+    private static final int DIES_PER_BONIFICACION_ADICIONAL_GENERAL = 2;
+    private static final double MULTIPLICADOR_BONIFICACION_BASIC = 1.5;
+    private static final double MULTIPLICADOR_BONIFICACION_GENERAL = 2.5;
+    private static final double MULTIPLICADOR_BONIFICACION_LUXE = 6;
+
     public Lloguer(String data, int dies, Vehicle vehicle) throws ParseException {
         this.data = dateFormat.parse(data);
         this.dies = dies;
@@ -26,19 +34,19 @@ public class Lloguer {
         double quantitat = 0;
         switch (this.getVehicle().getCategoria()) {
             case BASIC:
-                quantitat += 3;
-                if (this.getDies() > 3) {
-                    quantitat += (this.getDies() - 3) * 1.5;
+                quantitat += BONIFICACION_INICIAL_BASIC;
+                if (this.getDies() > DIES_PER_BONIFICACION_ADICIONAL_BASIC) {
+                    quantitat += (this.getDies() - DIES_PER_BONIFICACION_ADICIONAL_BASIC) * MULTIPLICADOR_BONIFICACION_BASIC;
                 }
                 return quantitat;
             case GENERAL:
-                quantitat += 4;
-                if (this.getDies() > 2) {
-                    quantitat += (this.getDies() - 2) * 2.5;
+                quantitat += BONIFICACION_INICIAL_GENERAL;
+                if (this.getDies() > DIES_PER_BONIFICACION_ADICIONAL_GENERAL) {
+                    quantitat += (this.getDies() - DIES_PER_BONIFICACION_ADICIONAL_GENERAL) * MULTIPLICADOR_BONIFICACION_GENERAL;
                 }
                 return quantitat;
             case LUXE:
-                quantitat += this.getDies() * 6;
+                quantitat += this.getDies() * MULTIPLICADOR_BONIFICACION_LUXE;
                 return quantitat;
         }
         return 0;

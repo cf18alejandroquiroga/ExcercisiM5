@@ -6,6 +6,8 @@ public class Client {
     private String telefon;
     private Vector<Lloguer> lloguers;
 
+    private static final int PREU_PER_DIA = 30;
+
     public Client(String nif, String nom, String telefon) {
         this.nif = nif;
         this.nom = nom;
@@ -50,7 +52,7 @@ public class Client {
         double total = 0;
         for (Lloguer lloguer: lloguers) {
             double quantitat = lloguer.quantitat();
-            total += quantitat * 30;
+            total += quantitat * PREU_PER_DIA;
         }
         return total;
     }
@@ -73,12 +75,13 @@ public class Client {
         String detall = "";
         for (Lloguer lloguer: lloguers) {
             double quantitat = lloguer.quantitat();
+            double preu = quantitat * PREU_PER_DIA;
             // composa els resultats d'aquest lloguer
             detall += "\t" +
                     lloguer.getVehicle().getMarca() +
                     " " +
                     lloguer.getVehicle().getModel() + ": " +
-                    (quantitat * 30) + "€" + "\n";
+                    preu + "€" + "\n";
         }
         return detall;
     }
